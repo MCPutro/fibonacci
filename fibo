@@ -6,15 +6,25 @@ public class JavaApplication1 {
         Scanner inputan=new Scanner(System.in);
         int user= inputan.nextInt();
         
+        
+        int[] temp = new int[100];
+        int x=0;
         int a=1,b=0,c=1,f,g;
         System.out.print("hasil= ");
         for(int i=0; i<user; i++){
             System.out.print(a+" ");
+            temp[x] = a;
+            x++;
+            
             a=b+c;
             f=c;
             b=f;
             g=a;
             c=g;
+        }
+        
+        for(int y=x-1;y>=0;y--){
+            System.out.print(temp[y]+" ");
         }
     }
     
