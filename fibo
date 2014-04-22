@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        Scanner inputan=new Scanner(System.in);
+        int user= inputan.nextInt();
+        
+        int a=1,b=0,c=1,f,g;
+        System.out.print("hasil= ");
+        for(int i=0; i<user; i++){
+            System.out.print(a+" ");
+            a=b+c;
+            f=c;
+            b=f;
+            g=a;
+            c=g;
+        }
+    }
+    
+}
