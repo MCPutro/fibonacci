@@ -9,10 +9,11 @@ public class JavaApplication1 {
         
         int[] temp = new int[100];
         int x=0;
-        int a=1,b=0,c=1,f,g;
+        int a=1,b=0,c=1,f,g,jumlah=0;
         System.out.print("hasil= ");
         for(int i=0; i<user; i++){
             System.out.print(a+" ");
+            jumlah=jumlah+a;
             temp[x] = a;
             x++;
             
@@ -22,6 +23,7 @@ public class JavaApplication1 {
             g=a;
             c=g;
         }
+        System.out.println("jumlah : "+jumlah);
         
         for(int y=x-1;y>=0;y--){
             System.out.print(temp[y]+" ");
