@@ -6,16 +6,18 @@ public class JavaApplication1 {
         Scanner inputan=new Scanner(System.in);
         int user= inputan.nextInt();
         
-        int a=1,b=0,c=1,f,g;
+        int a=1,b=0,c=1,f,g,jumlah=0;
         System.out.print("hasil= ");
         for(int i=0; i<user; i++){
             System.out.print(a+" ");
+            jumlah=jumlah+a;
             a=b+c;
             f=c;
             b=f;
             g=a;
             c=g;
         }
+        System.out.println("jumlah : "+jumlah);
     }
     
 }
